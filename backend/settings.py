@@ -57,6 +57,8 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
+CORS_ALLOW_CREDENTIALS = True
+
 CORS_ALLOWED_ORIGINS = [
     "https://wonderful-zuccutto-384ef5.netlify.app", 
 ]
@@ -68,6 +70,12 @@ CORS_ALLOW_METHODS = [
     "PUT",
     "DELETE",
     "OPTIONS",
+]
+
+# Allow common headers used in API requests
+CORS_ALLOW_HEADERS = [
+    "Authorization",
+    "Content-Type",
 ]
 
 ROOT_URLCONF = 'backend.urls'
