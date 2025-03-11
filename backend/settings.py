@@ -58,7 +58,7 @@ MIDDLEWARE = [
 ]
 
 CORS_ALLOWED_ORIGINS = [
-    "https://wonderful-zuccutto-384ef5.netlify.app/", 
+    "https://wonderful-zuccutto-384ef5.netlify.app", 
 ]
 
 
