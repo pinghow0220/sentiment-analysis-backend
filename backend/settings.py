@@ -25,7 +25,11 @@ SECRET_KEY = 'django-insecure-i%ubt1to(jc(c@d($bkqt%89h!b7z5)8_b!=**(6(!p!9(!ki$
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    "sentiment-analysis-backend-c07o.onrender.com",
+    "127.0.0.1",  # Allow local development
+    "localhost"
+]
 
 
 # Application definition
