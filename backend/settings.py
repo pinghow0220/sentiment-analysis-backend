@@ -61,6 +61,14 @@ CORS_ALLOWED_ORIGINS = [
     "https://wonderful-zuccutto-384ef5.netlify.app", 
 ]
 
+# Allow specific HTTP methods (GET, POST, etc.)
+CORS_ALLOW_METHODS = [
+    "GET",
+    "POST",
+    "PUT",
+    "DELETE",
+    "OPTIONS",
+]
 
 ROOT_URLCONF = 'backend.urls'
 

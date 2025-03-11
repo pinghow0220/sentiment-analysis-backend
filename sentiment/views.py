@@ -3,9 +3,11 @@ from rest_framework.decorators import api_view
 from textblob import TextBlob
 from nltk.sentiment import SentimentIntensityAnalyzer
 import nltk
+from django.views.decorators.csrf import csrf_exempt
 
 nltk.download('vader_lexicon')
 
+@csrf_exempt
 def analyze_sentiment(text):
     sia = SentimentIntensityAnalyzer()
     score = sia.polarity_scores(text)['compound']
