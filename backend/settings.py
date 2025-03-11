@@ -58,7 +58,7 @@ MIDDLEWARE = [
 ]
 
 CORS_ALLOWED_ORIGINS = [
-    "https://your-react-app.netlify.app",  # Change to your frontend URL
+    "https://wonderful-zuccutto-384ef5.netlify.app/", 
 ]
 
 
